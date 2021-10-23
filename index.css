@@ -1,0 +1,127 @@
+:root {
+    --gradient : linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(169, 255, 201) 48%, rgb(0, 255, 111) 100%);
+    --light : rgb(0, 255, 111);
+}
+
+/* Utility styles */
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#app-container {
+    background: var(--gradient);
+}
+
+img  {
+    max-width:100%;
+}
+
+header, section {
+    width: 90%;
+    margin: auto;
+}
+
+/* Utility styles ends here */
+
+
+/* Styles for headers */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top:3rem ;
+}
+
+header > #get-app, header > #logo{
+    flex-basis: 10%;
+}
+
+/* Styles for headers ends here */
+
+
+/* Styles for Hero section */
+section#hero {
+    display: flex;
+    color: white;
+}
+
+section#hero > #content , section#hero-img {
+    flex-basis: 50%;
+}
+
+section#hero > #content {
+    display: flex;
+    flex-direction: column;
+}
+
+section#hero > #content h1 {
+    font-size: 3rem;
+}
+
+
+section#hero > #content p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+section#hero > #content hr {
+    width: 3.5rem;
+    background: var(--light);
+    height: 0.3rem;
+    margin: 0px;
+}
+
+section#hero #store-btns-container {
+    width: 40%;
+}
+
+section#hero .store-logo img {
+    width: 20px;
+    height: 30px;
+}
+
+section#hero  #store-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#hero #play-store-btn {
+    flex-basis: 45%;
+}
+
+section#hero #apple-store-btn {
+    flex-basis: 45%;
+}
+
+section#hero  .store-btn{
+    display: flex;
+    padding-top:0.25rem;
+    border-radius: 8px;
+}
+
+section#hero  .store-logo {
+    flex-basis: 30%;
+}
+
+section#hero  .store-content {
+    flex-basis:70%;
+    font-size: 0.5rem;
+}
+
+section#hero  .store-content h2 {
+    margin-top:2px;
+}
+
+/* Styles for hero section ends here */
+
+
+section#curve-section {
+    width: 100%;
+}
