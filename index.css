@@ -1,5 +1,6 @@
 :root {
     --gradient : linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(169, 255, 201) 48%, rgb(0, 255, 111) 100%);
+    --gradient2 : linear-gradient(90deg, rgb(167, 167, 173) 0%, rgb(249, 253, 250) 48%, rgb(182, 245, 231) 100%);
     --light : rgb(0, 255, 111);
 }
 
@@ -20,6 +21,7 @@ body {
 
 img  {
     max-width:100%;
+    max-height: 100%;
 }
 
 header, section {
@@ -60,7 +62,7 @@ section#hero > #content {
 }
 
 section#hero > #content h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 
@@ -76,10 +78,11 @@ section#hero > #content hr {
     background: var(--light);
     height: 0.3rem;
     margin: 0px;
+    border: none;
 }
 
 section#hero #store-btns-container {
-    width: 40%;
+    width: 50%;
 }
 
 section#hero .store-logo img {
@@ -125,3 +128,53 @@ section#hero  .store-content h2 {
 section#curve-section {
     width: 100%;
 }
+
+
+/* Styles for find buy pay starts here */
+section#find-buy-pay {
+    background: white;
+    width: 100%;
+    padding-top: 3rem;
+    margin-top: -5px;
+}
+
+section#find-buy-pay h1 {
+    margin:0px;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+section#find-buy-pay p {
+    color: grey;
+}
+
+section#find-buy-pay  #buy-text{
+    text-align: center;
+}
+
+section#find-buy-pay #find-buy-pay-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section#find-buy-pay #find-buy-pay-top-container {
+    width: 65%;
+    margin: auto;
+}
+
+section#find-buy-pay .buy-pay-items {
+    max-height: 330px;
+    margin: 30px;
+}
+
+section#find-buy-pay hr {
+    width: 20%;
+    background: var(--gradient2);
+    height: 0.3rem;
+    margin: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+}
+/* Styles for find buy pay ends here */
