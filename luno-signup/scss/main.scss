@@ -1,0 +1,121 @@
+@import "_utilities.scss";
+@import "_buttons.scss";
+@import "_input.scss";
+
+html {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: $primary-color;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    width: 90%;
+    margin: auto;
+    color: $header-text-color;
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            text-transform: uppercase;
+            font-size: 1.05rem;
+            font-weight: bold;
+            padding : 1rem 1rem;
+
+            a {
+                text-decoration: none;
+                color: $header-text-color;
+            }
+        }
+
+        
+    }
+
+}
+
+
+section {
+    width:30%;
+    margin: auto;
+    background: $header-text-color;
+    padding:1rem;
+    border-radius: 5px;
+  
+
+    form {
+        @extend %form-query;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            color: $primary-color;
+        }
+
+        #signup-btn {
+            @extend %btn;
+            background-color: $secondary-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $header-text-color;
+            border: 1px $primary-color;
+        }
+
+        #google-btn {
+            @extend %btn;
+            color: black;
+            border: 1px solid black;
+        }
+
+        #apple-btn {
+            @extend %btn;
+            color: white;
+            background: black;
+            border: none;
+        }
+
+        #facebook-btn {
+            @extend %btn;
+            color: white;
+            background: rgb(38, 112, 207);
+            border: 1px $primary-color;
+        }
+
+        #email-input {
+            @extend %input;
+        }
+
+        #password-input {
+            @extend %input;
+        }
+
+        #latest-news {
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-top: 1rem;
+            width: 70%;
+            color: $text-color;
+        }
+
+        #signin{
+            color: $primary-color;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+    }
+}
+
+
+@import "_mobile.scss";

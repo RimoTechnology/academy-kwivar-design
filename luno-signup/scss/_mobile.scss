@@ -1,0 +1,32 @@
+// Large screen should show on only large scrren
+%lg-screen {
+    @media (min-width:1078px) {
+        display: block;
+    }
+
+    @media (max-width:1077px) {
+        display: none;
+    }
+}
+
+// Medium screen should show on medium and large screen
+%md-screen {
+
+    @media (min-width:766px) {
+        display: none;
+    }
+}
+
+
+
+@media(min-width:776px) {
+    section {
+        width: 100%;
+        form {
+            width: 90%;
+            margin: auto;
+        }
+    }
+  
+}
+
