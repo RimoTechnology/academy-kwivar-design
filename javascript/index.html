@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Game</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="tennis-app" class="w-1/2 m-auto my-20 flex flex-col text-center">
+
+        <h1 class="text-3xl my-4">Tennis Game</h1>
+
+ 
+        <img src="img/court.svg" class="w-80 h-70 m-auto my-4">
+  
+
+       
+
+        <table class="w-2/3 m-auto table-auto border border-green-600 my-4 hidden">
+            <thead>
+                <tr>
+                    <th class="border border-green-600">Players</th>
+                    <th class="border border-green-600">Points</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="border border-green-600">Player 1 (Emeka)</td>
+                    <td class="border border-green-600" id="player1Point"> 0 </td>
+                </tr>
+
+                <tr>
+                    <td class="border border-green-600">Player 2 (Gillis)</td>
+                    <td class="border border-green-600" id="player2Point"> 0 </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="hidden my-4">
+            <span>Score Board : <b id="winner-text">No winner yet .... </b></span>
+        </div>
+
+
+        <div class="my-4">
+            <button class="p-2 bg-blue-600 rounded text-white hidden scorebtns" onclick="scorePlayer1()">Give Player 1 Point</button>
+            <button class="p-2 bg-red-600 rounded text-white hidden scorebtns" onclick="scorePlayer2()">Give Player 2 Point</button>
+            <button class="p-2 bg-green-600 rounded text-white hidden" onclick="resetScores()">Reset Game</button>
+            <button class="p-2 bg-green-600 rounded text-white" onclick="startGame(event)">Start Game</button>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/index.js"></script>
+
+</html>
